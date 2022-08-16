@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+/* ## Colors */
+
+/* ### Primary */
+
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    background-color: var(--Pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size:contain; 
+}
+@media screen and (min-width:700px) {
+    main{
+        background-image: url('./images/pattern-background-desktop.svg');
+
+    }
+}
+p{
+    font-size: 1em;
+}
+h1{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+article{
+    margin: 1em; 
+}
+/* AKA card content */
+.article{ 
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.article p:nth-of-type(1){
+    line-height: 1.6;
+}
+.card{
+    background-color: #fff;
+    max-width: 375px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+}
+#hero-img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.plan-details{
+    margin: 1.5em 1em;
+    background-color: var(--Very-pale-blue);
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+}
+.secondary{
+    color: var(--Desaturated-blue);
+}
+.plan-details img{
+    margin-right: 1em;
+}
+.plan-details a{
+    display: inline-block;
+    margin-left: auto;
+    color: var(--Bright-blue);
+    font-weight: 900;
+    font-size: 14px;
+}
+.plan-details p:nth-of-type(1){
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+button{
+    background-color: var(--Bright-blue);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: inherit;
+    letter-spacing: 1px;
+    padding: 1.3em 2em;
+    border-radius: 15px;
+    box-shadow: 0px 10px 60px -10px rgba(56, 41, 224, 0.762);
+    cursor: pointer;
+}
+.cancel{
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    display: block;
+    margin: 2em 0 1em 0;
+    text-decoration: none;
+    cursor: pointer;
+}
