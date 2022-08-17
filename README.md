@@ -6,7 +6,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot(s))
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -23,7 +23,7 @@ Users should be able to:
 
 - See hover states for interactive elements
 
-### Screenshot(s)
+### Screenshots
 
 1. Mobile Solution
 
