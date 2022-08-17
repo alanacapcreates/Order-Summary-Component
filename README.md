@@ -26,9 +26,11 @@ Users should be able to:
 ### Screenshot(s)
 
 1. Mobile Solution
+
 ![Screenshot of the mobile solution](./images/Screenshot-MobileSolution.png)
 
 2. Desktop Solution
+
 ![Screenshot of the desktop solution](./images/Screenshot-DesktopSolution.png)
 
 ### Links
